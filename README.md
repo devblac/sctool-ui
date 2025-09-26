@@ -1,46 +1,176 @@
-# Getting Started with Create React App
+# 🎮 StarCraft Replay Analyzer Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![React](https://img.shields.io/badge/React-19.1.1-blue.svg)](https://reactjs.org/)
+[![Material-UI](https://img.shields.io/badge/Material--UI-7.3.2-blue.svg)](https://mui.com/)
+[![Vite](https://img.shields.io/badge/Vite-7.1.7-purple.svg)](https://vitejs.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue.svg)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+A modern, fast, and intuitive web interface for analyzing StarCraft replay files. Built with React, Material-UI, and Vite for optimal performance and developer experience.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **📊 Comprehensive Analytics Dashboard**: Visual charts and insights from your replay data
+- **🎯 Performance Tracking**: Win rates, APM, game duration analysis, and strategic insights
+- **🗺️ Map Analysis**: Popular map statistics and matchup distributions
+- **⚙️ Advanced Configuration**: Customizable analysis settings and replay directory management
+- **📱 Responsive Design**: Works seamlessly on desktop and mobile devices
+- **🚀 Modern Tech Stack**: Built with React 19, TypeScript, and Material-UI v7
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Quick Start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js 18+ and npm
+- StarCraft replay files (from StarCraft: Remastered or similar)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd sctool-ui
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+### Available Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run start` - Alias for `npm run dev`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📋 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+sctool-ui/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable UI components
+│   │   ├── Charts.tsx     # Chart components
+│   │   └── ErrorBoundary.tsx
+│   ├── pages/             # Page-level components
+│   │   ├── Dashboard.tsx  # Main dashboard
+│   │   ├── Analytics.tsx  # Analytics page
+│   │   └── Settings.tsx   # Configuration page
+│   ├── services/          # API and external services
+│   └── App.tsx            # Main application component
+├── docs/                  # Documentation
+├── vite.config.ts         # Vite configuration
+└── package.json           # Dependencies and scripts
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🔧 Configuration
 
-## Learn More
+### Environment Variables
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a `.env` file in the root directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```env
+# API Configuration
+VITE_API_BASE_URL=http://localhost:8000/api
+
+# Application Settings
+VITE_APP_NAME=StarCraft Replay Analyzer
+VITE_APP_VERSION=1.0.0
+```
+
+### Replay Directory Setup
+
+1. Open the Settings page in the application
+2. Configure your replay directory path
+3. Enable recursive search if needed
+4. Select analyzers for your analysis
+5. Run analysis to generate data
+
+## 🎨 Tech Stack
+
+### Frontend Framework
+- **React 19.1.1** - Modern React with concurrent features
+- **TypeScript 4.9.5** - Type safety and better developer experience
+- **Vite 7.1.7** - Lightning-fast build tool and dev server
+
+### UI Components
+- **Material-UI 7.3.2** - Modern Material Design components
+- **Recharts 3.2.1** - Beautiful, responsive charts
+- **React Router 7.9.2** - Client-side routing
+
+### Development Tools
+- **Vitest** - Fast unit testing
+- **ESLint** - Code linting and formatting
+- **Prettier** - Code formatting
+
+## 📊 Screenshots
+
+*Dashboard Overview*
+![Dashboard](https://via.placeholder.com/800x400/1976d2/ffffff?text=Dashboard+Overview)
+
+*Analytics Page*
+![Analytics](https://via.placeholder.com/800x400/388e3c/ffffff?text=Analytics+Page)
+
+*Settings Configuration*
+![Settings](https://via.placeholder.com/800x400/f57c00/ffffff?text=Settings+Page)
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 Documentation
+
+- [Development Guidelines](docs/guidelines.md) - Coding standards and best practices
+- [Frontend Integration Guide](FRONTEND_INTEGRATION_GUIDE.md) - Integration documentation
+- [API Documentation](API.md) - Backend API reference
+
+## 🐛 Issues and Support
+
+- **Bug Reports**: [GitHub Issues](https://github.com/yourusername/sctool-ui/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/yourusername/sctool-ui/discussions)
+- **Questions**: [GitHub Discussions](https://github.com/yourusername/sctool-ui/discussions)
+
+## 📜 Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a list of changes and version history.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **StarCraft Community** for their passion and dedication
+- **Material-UI Team** for the amazing component library
+- **React Team** for the powerful framework
+- **Vite Team** for the blazing-fast build tool
+
+## 🔗 Related Projects
+
+- [SCTool Backend](https://github.com/yourusername/sctool-backend) - Backend API for replay analysis
+- [SCTool CLI](https://github.com/yourusername/sctool-cli) - Command-line tool for replay analysis
+
+---
+
+<div align="center">
+
+**Built with ❤️ for the StarCraft community**
+
+[⭐ Star on GitHub](https://github.com/yourusername/sctool-ui) • [🐛 Report Bug](https://github.com/yourusername/sctool-ui/issues) • [💬 Discussions](https://github.com/yourusername/sctool-ui/discussions)
+
+</div>
