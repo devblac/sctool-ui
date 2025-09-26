@@ -28,7 +28,7 @@ A modern, fast, and intuitive web interface for analyzing StarCraft replay files
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/devblac/sctool-ui
    cd sctool-ui
    ```
 
@@ -141,9 +141,9 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 ## 🐛 Issues and Support
 
-- **Bug Reports**: [GitHub Issues](https://github.com/yourusername/sctool-ui/issues)
-- **Feature Requests**: [GitHub Discussions](https://github.com/yourusername/sctool-ui/discussions)
-- **Questions**: [GitHub Discussions](https://github.com/yourusername/sctool-ui/discussions)
+- **Bug Reports**: [GitHub Issues](https://github.com/devblac/sctool-ui/issues)
+- **Feature Requests**: [GitHub Discussions](https://github.com/devblac/sctool-ui/discussions)
+- **Questions**: [GitHub Discussions](https://github.com/devblac/sctool-ui/discussions)
 
 ## 📜 Changelog
 
@@ -162,8 +162,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Related Projects
 
-- [SCTool Backend](https://github.com/yourusername/sctool-backend) - Backend API for replay analysis
-- [SCTool CLI](https://github.com/yourusername/sctool-cli) - Command-line tool for replay analysis
+- [SCTool CLI](https://github.com/marianogappa/sctool) - Command-line tool for replay analysis
 
 ---
 
@@ -171,6 +170,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for the StarCraft community**
 
-[⭐ Star on GitHub](https://github.com/yourusername/sctool-ui) • [🐛 Report Bug](https://github.com/yourusername/sctool-ui/issues) • [💬 Discussions](https://github.com/yourusername/sctool-ui/discussions)
+[⭐ Star on GitHub](https://github.com/devblac/sctool-ui) • [🐛 Report Bug](https://github.com/devblac/sctool-ui/issues) • [💬 Discussions](https://github.com/devblac/sctool-ui/discussions)
 
 </div>
