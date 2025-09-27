@@ -123,6 +123,20 @@ VITE_APP_VERSION=1.0.0
 *Settings Configuration*
 ![Settings](https://via.placeholder.com/800x400/f57c00/ffffff?text=Settings+Page)
 
+## 🚀 Deployment
+
+### GitHub Pages (Demo)
+Deploy a working demo to GitHub Pages:
+```bash
+npm run deploy
+```
+Your app will be available at: `https://devblac.github.io/sctool-ui/`
+
+**Note**: The demo uses mock data since it's frontend-only.
+
+### Other Platforms
+See our [Deployment Guide](docs/DEPLOYMENT.md) for Docker, Vercel, Netlify, and other hosting options.
+
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
@@ -138,6 +152,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 - [Development Guidelines](docs/guidelines.md) - Coding standards and best practices
 - [Frontend Integration Guide](FRONTEND_INTEGRATION_GUIDE.md) - Integration documentation
 - [API Documentation](API.md) - Backend API reference
+- [Deployment Guide](docs/DEPLOYMENT.md) - Hosting and deployment instructions
 
 ## 🐛 Issues and Support
 
