@@ -24,7 +24,7 @@ import {
   FolderOpen,
   PlayArrow,
   Help,
-  Refresh,
+  Refresh as RefreshIcon,
   Save,
   Download,
   GetApp,
@@ -403,7 +403,7 @@ const Settings = () => {
                 <Button
                   variant="contained"
                   color="primary"
-                  startIcon={isAnalyzing ? <Refresh /> : <PlayArrow />}
+                  startIcon={isAnalyzing ? <RefreshIcon /> : <PlayArrow />}
                   onClick={handleRunAnalysis}
                   disabled={isAnalyzing}
                 >
@@ -461,7 +461,7 @@ const Settings = () => {
                 <Grid item >
                   <Button
                     variant="outlined"
-                    startIcon={<Refresh />}
+                    startIcon={<RefreshIcon />}
                     onClick={() => setSettings({
                       replayPath: '',
                       recursiveSearch: true,

@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
-import { Container, Grid, Refresh } from '@mui/material';
+import { Container, Grid } from '@mui/material';
+import { Refresh as RefreshIcon } from '@mui/icons-material';
 import { Games, AccessTime, Map, TrendingUp } from '@mui/icons-material';
 import { SummaryCards } from '../components/Charts';
 import { PageHeader, Section } from '../components/layout';
@@ -119,7 +120,7 @@ const Dashboard = () => {
           label: 'Refresh Data',
           onClick: refreshStats,
           loading,
-          startIcon: <Refresh />,
+          startIcon: <RefreshIcon />,
         }}
       />
 

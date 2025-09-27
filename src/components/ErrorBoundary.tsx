@@ -9,7 +9,7 @@ import {
   Box,
   Alert,
 } from '@mui/material';
-import { Error, Refresh, Home } from '@mui/icons-material';
+import { Error, Refresh as RefreshIcon, Home } from '@mui/icons-material';
 
 interface Props {
   children: React.ReactNode;
@@ -84,7 +84,7 @@ class ErrorBoundary extends Component<Props, State> {
               <Box display="flex" gap={2}>
                 <Button
                   variant="contained"
-                  startIcon={<Refresh />}
+                  startIcon={<RefreshIcon />}
                   onClick={this.handleReload}
                 >
                   Reload Page

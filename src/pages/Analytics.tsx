@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
-import { Container, Grid, Refresh, Box, Chip } from '@mui/material';
+import { Container, Grid, Box, Chip } from '@mui/material';
+import { Refresh as RefreshIcon } from '@mui/icons-material';
 import { ShowChart } from '@mui/icons-material';
 import { PageHeader, Section } from '../components/layout';
 import { FilterPanel, ChartSection, ActivityCard } from '../components/ui';
@@ -186,7 +187,7 @@ const Analytics = () => {
           label: 'Refresh Charts',
           onClick: handleRefresh,
           loading,
-          startIcon: <Refresh />,
+          startIcon: <RefreshIcon />,
         }}
       />
 
