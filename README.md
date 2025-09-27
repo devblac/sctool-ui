@@ -125,14 +125,22 @@ VITE_APP_VERSION=1.0.0
 
 ## 🚀 Deployment
 
-### GitHub Pages (Demo)
-Deploy a working demo to GitHub Pages:
+### GitHub Pages (Automated)
+🚀 **Automatic deployment** on every push to main branch!
+
+Your app is available at: `https://devblac.github.io/sctool-ui/`
+
+**Features:**
+- ✅ **Auto-deployment** via GitHub Actions (every push to main)
+- ✅ **CDN delivery** for fast loading
+- ✅ **Mock data demo** (frontend-only)
+- ✅ **Mobile responsive** design
+- ✅ **Build optimization** with code splitting
+
+**Manual deployment** (if needed):
 ```bash
 npm run deploy
 ```
-Your app will be available at: `https://devblac.github.io/sctool-ui/`
-
-**Note**: The demo uses mock data since it's frontend-only.
 
 ### Other Platforms
 See our [Deployment Guide](docs/DEPLOYMENT.md) for Docker, Vercel, Netlify, and other hosting options.
@@ -153,6 +161,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 - [Frontend Integration Guide](FRONTEND_INTEGRATION_GUIDE.md) - Integration documentation
 - [API Documentation](API.md) - Backend API reference
 - [Deployment Guide](docs/DEPLOYMENT.md) - Hosting and deployment instructions
+- [GitHub Actions Workflow](.github/workflows/deploy.yml) - Automated deployment configuration
 
 ## 🐛 Issues and Support
 
