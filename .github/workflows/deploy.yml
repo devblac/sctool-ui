@@ -27,16 +27,35 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20.19.0'
           cache: 'npm'
+
+      - name: Update npm
+        run: npm install -g npm@latest
+
+      - name: Clear npm cache
+        run: npm cache clean --force
 
       - name: Install dependencies
         run: npm ci
+        continue-on-error: false
+
+      - name: Verify Node.js version
+        run: node --version && npm --version && echo "Vite version:" && npx vite --version
 
       - name: Build
         run: npm run build
-        env:
-          NODE_ENV: production
+        continue-on-error: false
+
+      - name: List build output
+        run: ls -la build/
+
+      - name: Verify build contents
+        run: |
+          echo "Checking build contents..."
+          test -f build/index.html && echo "✅ index.html found"
+          test -d build/assets && echo "✅ assets directory found"
+          echo "Build verification complete"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

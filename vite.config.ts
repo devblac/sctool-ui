@@ -22,5 +22,9 @@ export default defineConfig({
         }
       }
     }
+  },
+  // Ensure proper ES module handling
+  optimizeDeps: {
+    include: ['@vitejs/plugin-react']
   }
 })
